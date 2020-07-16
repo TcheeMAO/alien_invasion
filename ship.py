@@ -3,7 +3,7 @@ import pygame
 
 class Ship():
 
-    def __init__(self, ai_settings, screen, bullets):
+    def __init__(self, ai_settings, screen):
         """Initialize the ship and set its starting position."""
         self.screen = screen
         self.ai_settings = ai_settings
@@ -25,6 +25,9 @@ class Ship():
         self.moving_left = False
         self.moving_up = False
         self.moving_down = False
+
+        # Firing bullets flag
+        self.firing = False
 
     def update(self):
         """Update the ship's position based on the movement flag."""
