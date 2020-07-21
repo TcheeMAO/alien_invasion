@@ -31,7 +31,7 @@ def run_game():
     # Set the background color.
     bg_color = (230, 230, 230)
 
-    gf.create_fleet(ai_settings, screen, aliens)
+    gf.create_fleet(ai_settings, screen, ship, aliens)
 
     # Start the main loop for the game.
     while True:

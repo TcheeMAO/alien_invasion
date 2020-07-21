@@ -36,7 +36,7 @@ class Ship():
             self.rect.centerx += self.ai_settings.ship_speed_factor
         if self.moving_left and self.rect.left > 0:
             self.rect.centerx -= self.ai_settings.ship_speed_factor
-        if self.moving_up and self.rect.top > 400:
+        if self.moving_up and self.rect.top > 600:
             self.rect.bottom -= self.ai_settings.ship_speed_factor
         if self.moving_down and self.rect.bottom < 800:
             self.rect.bottom += self.ai_settings.ship_speed_factor
