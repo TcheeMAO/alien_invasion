@@ -36,7 +36,7 @@ class Ship():
             self.rect.centerx += self.ai_settings.ship_speed_factor
         if self.moving_left and self.rect.left > 0:
             self.rect.centerx -= self.ai_settings.ship_speed_factor
-        if self.moving_up and self.rect.top > 600:
+        if self.moving_up and self.rect.top > 500:
             self.rect.bottom -= self.ai_settings.ship_speed_factor
         if self.moving_down and self.rect.bottom < 800:
             self.rect.bottom += self.ai_settings.ship_speed_factor
@@ -44,3 +44,8 @@ class Ship():
     def blitme(self):
         """Draw the ship at its current location."""
         self.screen.blit(self.image, self.rect)
+
+
+    def center_ship(self):
+        """Center the ship on the screen."""
+        self.center = self.screen_rect.centerx
